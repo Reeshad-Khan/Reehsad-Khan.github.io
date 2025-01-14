@@ -33,6 +33,7 @@
     }
     header p {
       font-size: 1.1rem;
+      margin-bottom: 10px;
     }
     nav {
       background-color: #333;
@@ -42,6 +43,7 @@
       list-style-type: none;
       display: flex;
       justify-content: center;
+      padding: 0;
     }
     nav ul li {
       margin: 0 15px;
@@ -70,14 +72,24 @@
       margin-bottom: 10px;
       color: #0056b3;
     }
-    section p,
-    section ul {
+    section p, section ul, section ol {
       font-size: 1rem;
       margin-bottom: 15px;
     }
     ul {
       margin-left: 20px;
       list-style-type: disc;
+    }
+    ol {
+      margin-left: 20px;
+      list-style-type: decimal;
+    }
+    .profile-photo {
+      display: block;
+      max-width: 180px;
+      border-radius: 10%;
+      margin: 0 auto 20px auto;
+      box-shadow: 0 0 6px rgba(0,0,0,0.1);
     }
     footer {
       width: 100%;
@@ -118,7 +130,7 @@
   <!-- Header Section -->
   <header>
     <h1>Reeshad Khan</h1>
-    <p>PhD Candidate in Computer Science | Deep Learning Enthusiast | Computer Vision Researcher</p>
+    <p>PhD Candidate in Computer Science | Deep Learning & Autonomous Systems</p>
   </header>
 
   <!-- Navigation Bar -->
@@ -126,7 +138,8 @@
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#education">Education</a></li>
-      <li><a href="#research">Research & Publications</a></li>
+      <li><a href="#research">Research Projects</a></li>
+      <li><a href="#publications">Publications</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -136,14 +149,16 @@
     <!-- About Section -->
     <section id="about">
       <h2>About Me</h2>
+      <img src="profile.jpg" alt="Profile Photo" class="profile-photo">
       <p>
-        Hello! I'm a dedicated researcher specializing in <strong>deep learning</strong>, 
-        <strong>model optimization</strong>, and <strong>on-device ML</strong>. 
-        My passion lies in exploring cutting-edge techniques that push the boundaries of 
-        <strong>computer vision</strong>, <strong>medical imaging</strong>, and 
-        <strong>3D scene understanding</strong>. I have extensive experience in 
-        building and deploying efficient <strong>machine learning models</strong> 
-        on resource-constrained devices, including edge GPUs and mobile platforms.
+        Hello! I'm a dedicated researcher specializing in <strong>deep learning</strong>,
+        <strong>autonomous systems</strong>, and <strong>medical imaging</strong>.
+        My passion lies in pushing the boundaries of <strong>unsupervised learning</strong>,
+        <strong>model optimization</strong>, and <strong>GPU acceleration</strong> to
+        develop efficient solutions for both <em>autonomous vehicles</em> and
+        <em>healthcare</em> applications. I strive to leverage cutting-edge techniques
+        that enhance real-time scene understanding, medical image processing, and
+        advanced driver-assistance systems.
       </p>
     </section>
 
@@ -151,60 +166,151 @@
     <section id="education">
       <h2>Education</h2>
       <ul>
-        <li><strong>PhD in Computer Science (In Progress)</strong><br/>
-          University of Arkansas, Fayetteville, AR (Aug 2021 – Present)<br/>
+        <li><strong>PhD in Computer Science (In Progress)</strong><br>
+          University of Arkansas, Fayetteville, AR (Aug 2021 – Present)<br>
           <em>Focus:</em> Deep Learning, Model Compression & Quantization, On-device ML
         </li>
-        <li><strong>Master of Science in Computer Science</strong><br/>
-          University of Arkansas, Fayetteville, AR (Aug 2021 – May 2024)<br/>
-          <em>Coursework:</em> Neural Network Optimization, Parallel Computing, Systems Programming
+        <li><strong>Master of Science in Computer Science</strong><br>
+          University of Arkansas, Fayetteville, AR (Aug 2021 – May 2024)<br>
+          <em>Advanced Coursework:</em> Neural Network Optimization, Parallel Computing, Systems Programming
         </li>
-        <li><strong>Master of Science in Computer Science and Technology</strong><br/>
-          Chang’an University, Xi’an, China (May 2021)<br/>
+        <li><strong>Master of Science in Computer Science and Technology</strong><br>
+          Chang’an University, Xi’an, China (May 2021)<br>
           <em>Specialized in GPU-accelerated machine learning</em>
         </li>
-        <li><strong>Bachelor of Science in Computer Science and Engineering</strong><br/>
-          University of Liberal Arts Bangladesh, Dhaka, Bangladesh (May 2016)<br/>
+        <li><strong>Bachelor of Science in Computer Science and Engineering</strong><br>
+          University of Liberal Arts Bangladesh, Dhaka, Bangladesh (May 2016)<br>
           <em>Foundation in algorithms, data structures, OOP</em>
         </li>
       </ul>
     </section>
 
-    <!-- Research & Publications Section -->
+    <!-- Research Projects Section -->
     <section id="research">
-      <h2>Research & Publications</h2>
-      <p>
-        My research spans a variety of areas within <strong>deep learning</strong>, 
-        <strong>multi-task learning</strong>, and <strong>GPU optimization</strong>. 
-        Below are some of my most notable publications:
-      </p>
+      <h2>Research Projects</h2>
+
+      <!-- Project A -->
+      <article>
+        <h3>Project A: Semantic Scene Understanding in Autonomous Systems</h3>
+        <p><strong>Source of Funding:</strong> Departmental funding, University of Arkansas</p>
+        <p><strong>Brief & Simple Summary:</strong></p>
+        <ul>
+          <li><em>Problem:</em> Enabling autonomous systems to interpret complex scenes in real-time, ensuring safe navigation.</li>
+          <li><em>Uniqueness:</em> Unsupervised learning methods that adapt to new environments without extensive labels.</li>
+          <li><em>Real-World Application:</em> Enhances autonomous vehicle navigation in diverse environments.</li>
+          <li><em>Interested Entities:</em> Automotive companies, JPL labs, federal road safety departments.</li>
+        </ul>
+        <p><strong>Technical Summary:</strong></p>
+        <ul>
+          <li>Data acquisition & preprocessing with diverse environment datasets.</li>
+          <li>Algorithm development using Neural Radiance Fields (NeRF) for 3D reconstruction.</li>
+          <li>Panoptic segmentation merging instance and semantic segmentation.</li>
+          <li>Real-time optimization (model pruning, efficient neural architectures).</li>
+        </ul>
+        <p><strong>Scientific Impact:</strong> Advances unsupervised scene understanding for better adaptability in autonomous systems.</p>
+        <p><strong>Economic Impact:</strong> Enhances safety and reduces costs in logistics, transportation, and reduces traffic accidents.</p>
+      </article>
+
+      <!-- Project B -->
+      <article>
+        <h3>Project B: Denoising MRI Using Deep Unsupervised Methods</h3>
+        <p><strong>Source of Funding:</strong> CIDER Lab, University of Arkansas</p>
+        <p><strong>Related Publication:</strong> From Noise Estimation to Restoration: A Unified Diffusion and Bayesian Risk Approach for Unsupervised Denoising</p>
+        <p><strong>Brief & Simple Summary:</strong></p>
+        <ul>
+          <li><em>Problem:</em> Reducing noise in MRI scans, crucial for diagnostic accuracy.</li>
+          <li><em>Uniqueness:</em> Novel unsupervised approach integrating enhanced diffusion and deep CNN (DnCNN), no noiseless ground truth needed.</li>
+          <li><em>Real-World Application:</em> Direct implementation in medical settings to improve MRI clarity.</li>
+          <li><em>Interested Entities:</em> Healthcare providers, medical imaging companies.</li>
+        </ul>
+        <p><strong>Technical Summary:</strong></p>
+        <ul>
+          <li>Enhanced diffusion models for noise estimation and reversal.</li>
+          <li>Bayesian-enhanced loss functions (SURE, PURE, Bayesian-PGURE).</li>
+          <li>Dynamic training of DnCNNs, adapting to various noise levels.</li>
+        </ul>
+        <p><strong>Scientific Impact:</strong> Introduces adaptable unsupervised MRI denoising, reducing dependence on clean datasets.</p>
+        <p><strong>Economic Impact:</strong> Fewer diagnostic errors, faster scans, and reduced healthcare costs.</p>
+      </article>
+
+      <!-- Project C -->
+      <article>
+        <h3>Project C: Learning from Oversampling for MRI Reconstruction</h3>
+        <p><strong>Source of Funding:</strong> CIDER Lab, University of Arkansas</p>
+        <p><strong>Related Publication:</strong> Learning from Oversampling: A Systematic Exploitation of Oversampling in Deep Learning-Based MRI Reconstruction</p>
+        <p><strong>Brief & Simple Summary:</strong></p>
+        <ul>
+          <li><em>Problem:</em> Data scarcity in training deep learning MRI reconstruction models.</li>
+          <li><em>Uniqueness:</em> Novel oversampling approach in k-space data, expanding dataset diversity beyond standard augmentation.</li>
+          <li><em>Real-World Application:</em> Improves MRI quality from undersampled data for efficient, accurate diagnoses.</li>
+          <li><em>Interested Entities:</em> Medical institutions, MRI tech developers.</li>
+        </ul>
+        <p><strong>Technical Summary:</strong></p>
+        <ul>
+          <li>One-to-many mapping function for oversampling training data.</li>
+          <li>Dual-network architecture boosting generalization for undersampled MRI data.</li>
+          <li>Comprehensive validation with complex MRI datasets.</li>
+        </ul>
+        <p><strong>Scientific Impact:</strong> Advances MRI reconstruction under limited data conditions, enhancing reliability and speed.</p>
+        <p><strong>Economic Impact:</strong> Efficient scans reduce healthcare costs, increase patient throughput, and improve clinical outcomes.</p>
+      </article>
+
+      <!-- Project D -->
+      <article>
+        <h3>Project D: Automatic AI System for Early Detection of Autism Spectrum Disorders in Children</h3>
+        <p><strong>Source of Funding:</strong> CVIU lab at University of Arkansas</p>
+        <p><strong>Brief & Simple Summary:</strong></p>
+        <ul>
+          <li><em>Problem:</em> Early ASD detection is crucial for timely intervention and improved developmental outcomes.</li>
+          <li><em>Uniqueness:</em> AI-based behavioral pattern analysis, faster and more objective than traditional methods.</li>
+          <li><em>Real-World Application:</em> Can be integrated into pediatric care for quicker screening and diagnosis.</li>
+          <li><em>Interested Entities:</em> Healthcare providers, pediatric clinics, special education programs.</li>
+        </ul>
+        <p><strong>Technical Summary:</strong></p>
+        <ul>
+          <li>Machine learning algorithms analyzing video/audio cues of children’s behavior.</li>
+          <li>Efficient system for real-time screening, reducing manual overhead.</li>
+          <li>Scalable approach for broader population screening.</li>
+        </ul>
+        <p><strong>Scientific Impact:</strong> Demonstrates integration of AI in neurodevelopmental diagnostics, broadening pediatric healthcare capabilities.</p>
+        <p><strong>Economic Impact:</strong> Reduced healthcare and educational costs through earlier, targeted interventions.</p>
+      </article>
+
+      <!-- Project E -->
+      <article>
+        <h3>Project E: Enhancing ADAS with EEG-Based Emotion Recognition for Autonomous Systems</h3>
+        <p><strong>Source of Funding:</strong> NEMSYS Lab & Chang'An University, Xi’an, China</p>
+        <p><strong>Related Publication:</strong> A Literature Review on Emotion Recognition using Various Methods</p>
+        <p><strong>Brief & Simple Summary:</strong></p>
+        <ul>
+          <li><em>Problem:</em> Improving ADAS by integrating EEG-based emotion recognition to assess driver states.</li>
+          <li><em>Uniqueness:</em> Goes beyond camera-based or visual modalities by using EEG for direct emotion/cognitive state detection.</li>
+          <li><em>Real-World Application:</em> Enhances autonomous driving safety by adapting to driver stress or distractions.</li>
+          <li><em>Interested Entities:</em> Automotive manufacturers, autonomous vehicle tech firms, regulatory bodies.</li>
+        </ul>
+        <p><strong>Technical Summary:</strong></p>
+        <ul>
+          <li>EEG data utilization to gauge stress, attentiveness, or fatigue.</li>
+          <li>Integration of Transformers/GRNN for accurate classification of emotional states.</li>
+          <li>Multimodal system adapting based on data reliability (EEG, visual, audio).</li>
+        </ul>
+        <p><strong>Scientific Impact:</strong> Introduces EEG-based emotion recognition into ADAS, broadening the scope of human-aware autonomy.</p>
+        <p><strong>Economic Impact:</strong> Enhanced vehicle safety reduces accidents and associated costs, fueling innovation in automotive AI.</p>
+      </article>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications">
+      <h2>Publications</h2>
       <ol>
-        <li>
-          <strong>Variational Panoptic Lifting</strong>: Consistent 3D Scene Understanding via Iterative 
-          Variational Refinement and Multi-View Feedback 
-          <br/><em>(CVPR 2025 Submission)</em>
-        </li>
-        <li>
-          <strong>From Noise Estimation to Restoration</strong>: A Unified Diffusion and Bayesian Risk Approach 
-          for Unsupervised Denoising 
-          <br/><em>(Accepted at VISAAP 2025)</em>
-        </li>
-        <li>
-          <strong>Learning from Oversampling</strong>: A Systematic Exploitation of Oversampling to Address 
-          Data Scarcity Issues in Deep Learning-Based Magnetic Resonance Image Reconstruction 
-          <br/><em>(Published in IEEE Access)</em>
-        </li>
-        <li>
-          <strong>Adaptive Extensions of Unbiased Risk Estimators for Unsupervised MRI Denoising</strong>
-          <br/><em>(Available on arXiv)</em>
-        </li>
-        <li>
-          <strong>A Literature Review on Emotion Recognition Using Various Methods</strong>
-          <br/><em>(Published in GJCST, Vol. 17, Issue 1, Version 1.0)</em>
-        </li>
+        <li><strong>Variational Panoptic Lifting</strong> (CVPR 2025 Submission)</li>
+        <li><strong>From Noise Estimation to Restoration</strong> (Accepted at VISAAP 2025)</li>
+        <li><strong>Learning from Oversampling</strong> (IEEE Access)</li>
+        <li><strong>Adaptive Extensions of Unbiased Risk Estimators</strong> (arXiv)</li>
+        <li><strong>A Literature Review on Emotion Recognition Using Various Methods</strong> (GJCST)</li>
       </ol>
       <p>
-        For a complete list of publications and citations, please visit my 
+        For a complete and detailed list, please visit my
         <a href="https://scholar.google.com/citations?user=D3rO3W4AAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a> profile.
       </p>
     </section>
@@ -213,20 +319,18 @@
     <section id="contact">
       <h2>Contact</h2>
       <p>
-        <strong>Email:</strong> <a href="mailto:rk010@uark.edu">rk010@uark.edu</a><br/>
-        <strong>LinkedIn:</strong> 
-          <a href="https://www.linkedin.com/in/reeshad-khan-a50207106/" target="_blank" rel="noopener noreferrer">
-            linkedin.com/in/reeshad-khan-a50207106
-          </a><br/>
-        <strong>GitHub:</strong> 
-          <a href="https://github.com/Reeshad-Khan" target="_blank" rel="noopener noreferrer">
-            github.com/Reeshad-Khan
-          </a>
+        <strong>Email:</strong> <a href="mailto:rk010@uark.edu">rk010@uark.edu</a><br>
+        <strong>LinkedIn:</strong>
+        <a href="https://www.linkedin.com/in/reeshad-khan-a50207106/" target="_blank" rel="noopener noreferrer">
+          linkedin.com/in/reeshad-khan-a50207106
+        </a><br>
+        <strong>GitHub:</strong>
+        <a href="https://github.com/Reeshad-Khan" target="_blank" rel="noopener noreferrer">
+          github.com/Reeshad-Khan
+        </a>
       </p>
       <p>
-        I am always open to connecting with fellow researchers, potential collaborators, and 
-        industry professionals. Feel free to reach out about new opportunities or 
-        exciting research ideas!
+        If you’d like to discuss a project or potential collaboration, feel free to reach out!
       </p>
     </section>
   </main>
@@ -234,8 +338,7 @@
   <!-- Footer Section -->
   <footer>
     <p>
-      &copy; <script>document.write(new Date().getFullYear());</script> 
-      Reeshad Khan - All Rights Reserved
+      &copy; <script>document.write(new Date().getFullYear());</script> Reeshad Khan - All Rights Reserved
     </p>
   </footer>
 </body>
