@@ -1,63 +1,242 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2818
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\margl1440\margr1440\vieww30040\viewh16580\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Personal Research Website of Reeshad Khan">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reeshad Khan - Research & Publications</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      line-height: 1.6;
+      margin: 0;
+      padding-bottom: 80px; /* space for footer */
+    }
+    header {
+      background: #0056b3;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin-bottom: 10px;
+      font-size: 2.2rem;
+      font-weight: 600;
+    }
+    header p {
+      font-size: 1.1rem;
+    }
+    nav {
+      background-color: #333;
+      overflow: hidden;
+    }
+    nav ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav a {
+      display: block;
+      padding: 14px 20px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover {
+      background-color: #444;
+      transition: 0.3s;
+    }
+    main {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    section {
+      margin: 30px 0;
+    }
+    section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      color: #0056b3;
+    }
+    section p,
+    section ul {
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
+    ul {
+      margin-left: 20px;
+      list-style-type: disc;
+    }
+    footer {
+      width: 100%;
+      background-color: #333;
+      color: #fff;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      padding: 15px 0;
+      text-align: center;
+    }
+    footer p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+    a {
+      color: #0056b3;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      nav ul {
+        flex-direction: column;
+      }
+      nav ul li {
+        margin: 5px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>Dr. Reeshad Khan</h1>
+    <p>PhD Candidate in Computer Science | Deep Learning Enthusiast | Computer Vision Researcher</p>
+  </header>
 
-\f0\fs24 \cf0 <!DOCTYPE html>\
-<html lang="en">\
-<head>\
-    <meta charset="UTF-8">\
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
-    <title>Welcome to My Personal Page</title>\
-    <style>\
-        body \{\
-            font-family: Arial, sans-serif;\
-            margin: 40px;\
-            background-color: #f4f4f9;\
-            color: #333;\
-        \}\
-        header \{\
-            background: #0056b3;\
-            color: white;\
-            padding: 10px 20px;\
-            text-align: center;\
-        \}\
-        section \{\
-            margin-top: 20px;\
-        \}\
-        footer \{\
-            text-align: center;\
-            padding: 10px;\
-            background-color: #333;\
-            color: white;\
-            position: fixed;\
-            bottom: 0;\
-            width: 100%;\
-        \}\
-    </style>\
-</head>\
-<body>\
-    <header>\
-        <h1>Welcome to My Personal GitHub Page</h1>\
-        <p>Find out more about my projects and interests!</p>\
-    </header>\
-    <section>\
-        <h2>About Me</h2>\
-        <p>Hello! I'm a developer with a passion for building engaging and efficient web applications. My interest lies in the field of Natural Language Processing and Machine Learning.</p>\
-        <h2>Projects</h2>\
-        <p>Here are some of the projects I have worked on:</p>\
-        <ul>\
-            <li><strong>NLP Analysis Tool</strong>: A tool that leverages NLP to understand and analyze text data.</li>\
-            <li><strong>Machine Learning Model</strong>: A predictive model that forecasts trends based on historical data.</li>\
-        </ul>\
-    </section>\
-    <footer>\
-        <script>\
-            document.write(new Date().getFullYear());\
-        </script> - All Rights Reserved.\
-    </footer>\
-</body>\
-</html>\
-}
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#research">Research & Publications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hello! I'm a dedicated researcher specializing in <strong>deep learning</strong>, 
+        <strong>model optimization</strong>, and <strong>on-device ML</strong>. 
+        My passion lies in exploring cutting-edge techniques that push the boundaries of 
+        <strong>computer vision</strong>, <strong>medical imaging</strong>, and 
+        <strong>3D scene understanding</strong>. I have extensive experience in 
+        building and deploying efficient <strong>machine learning models</strong> 
+        on resource-constrained devices, including edge GPUs and mobile platforms.
+      </p>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>PhD in Computer Science (In Progress)</strong><br/>
+          University of Arkansas, Fayetteville, AR (Aug 2021 – Present)<br/>
+          <em>Focus:</em> Deep Learning, Model Compression & Quantization, On-device ML
+        </li>
+        <li><strong>Master of Science in Computer Science</strong><br/>
+          University of Arkansas, Fayetteville, AR (Aug 2021 – May 2024)<br/>
+          <em>Coursework:</em> Neural Network Optimization, Parallel Computing, Systems Programming
+        </li>
+        <li><strong>Master of Science in Computer Science and Technology</strong><br/>
+          Chang’an University, Xi’an, China (May 2021)<br/>
+          <em>Specialized in GPU-accelerated machine learning</em>
+        </li>
+        <li><strong>Bachelor of Science in Computer Science and Engineering</strong><br/>
+          University of Liberal Arts Bangladesh, Dhaka, Bangladesh (May 2016)<br/>
+          <em>Foundation in algorithms, data structures, OOP</em>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Research & Publications Section -->
+    <section id="research">
+      <h2>Research & Publications</h2>
+      <p>
+        My research spans a variety of areas within <strong>deep learning</strong>, 
+        <strong>multi-task learning</strong>, and <strong>GPU optimization</strong>. 
+        Below are some of my most notable publications:
+      </p>
+      <ol>
+        <li>
+          <strong>Variational Panoptic Lifting</strong>: Consistent 3D Scene Understanding via Iterative 
+          Variational Refinement and Multi-View Feedback 
+          <br/><em>(CVPR 2025 Submission)</em>
+        </li>
+        <li>
+          <strong>From Noise Estimation to Restoration</strong>: A Unified Diffusion and Bayesian Risk Approach 
+          for Unsupervised Denoising 
+          <br/><em>(Accepted at VISAAP 2025)</em>
+        </li>
+        <li>
+          <strong>Learning from Oversampling</strong>: A Systematic Exploitation of Oversampling to Address 
+          Data Scarcity Issues in Deep Learning-Based Magnetic Resonance Image Reconstruction 
+          <br/><em>(Published in IEEE Access)</em>
+        </li>
+        <li>
+          <strong>Adaptive Extensions of Unbiased Risk Estimators for Unsupervised MRI Denoising</strong>
+          <br/><em>(Available on arXiv)</em>
+        </li>
+        <li>
+          <strong>A Literature Review on Emotion Recognition Using Various Methods</strong>
+          <br/><em>(Published in GJCST, Vol. 17, Issue 1, Version 1.0)</em>
+        </li>
+      </ol>
+      <p>
+        For a complete list of publications and citations, please visit my 
+        <a href="https://scholar.google.com/citations?user=D3rO3W4AAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a> profile.
+      </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        <strong>Email:</strong> <a href="mailto:rk010@uark.edu">rk010@uark.edu</a><br/>
+        <strong>LinkedIn:</strong> 
+          <a href="https://www.linkedin.com/in/reeshad-khan-a50207106/" target="_blank" rel="noopener noreferrer">
+            linkedin.com/in/reeshad-khan-a50207106
+          </a><br/>
+        <strong>GitHub:</strong> 
+          <a href="https://github.com/Reeshad-Khan" target="_blank" rel="noopener noreferrer">
+            github.com/Reeshad-Khan
+          </a>
+      </p>
+      <p>
+        I am always open to connecting with fellow researchers, potential collaborators, and 
+        industry professionals. Feel free to reach out about new opportunities or 
+        exciting research ideas!
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>
+      &copy; <script>document.write(new Date().getFullYear());</script> 
+      Reeshad Khan - All Rights Reserved
+    </p>
+  </footer>
+</body>
+</html>
